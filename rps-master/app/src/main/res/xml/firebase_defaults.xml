@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>giftLink</key>
+        <value>{
+            "displayText": "OPEN TO GET GIFT",
+            "linkUrl": "https://m.w88kub.com/pwa/web/#/funplay/register",
+            "imageUrl": "http://static.get88app.com/w88/pwa/tab_gift_no_glow.png",
+            "visible": true,
+            "linkType": "int"
+            }
+        </value>
+    </entry>
+    <entry>
+        <key>linkInfos</key>
+        <value>[
+            {
+            "displayText": "RANKING",
+            "linkUrl": "test.com",
+            "imageUrl": "http://static.get88app.com/w88/pwa/rps/btn_ranking.png",
+            "linkType": "int",
+            "visible": false,
+            "showFab": false
+            },
+            {
+            "displayText": "PROMOTIONS",
+            "linkUrl": "https://m.w88kub.com/promotions?IsNative=1",
+            "imageUrl": "http://static.get88app.com/w88/pwa/rps/btn_promo.png",
+            "linkType": "int",
+            "visible": true,
+            "showFab": false
+            },
+            {
+            "displayText": "PLAY FOR FUN",
+            "linkUrl": "https://taixiu.fungateway.com/Login?vendor=fungames&amp;s=&amp;lang=en&amp;game=taixiu&amp;mode=Try",
+            "imageUrl": "http://static.get88app.com/w88/pwa/rps/btn_playnow.png",
+            "linkType": "game",
+            "visible": true,
+            "showFab": false
+            },
+            {
+            "displayText": "HOW TO PLAY",
+            "linkUrl": "https://october.static-bifrost.com/en/game-rules-en",
+            "imageUrl": "http://static.get88app.com/w88/pwa/rps/btn_howto.png",
+            "linkType": "int",
+            "visible": true,
+            "showFab": false
+            },
+            {
+            "displayText": "FACEBOOK",
+            "linkUrl": "https://www.facebook.com/Choi-Tai-Xiu-Bau-Cua-107285043999168",
+            "imageUrl": "http://static.get88app.com/w88/pwa/rps/btn_fb.png",
+            "linkType": "int",
+            "visible": true,
+            "showFab": false
+            }
+            ]
+        </value>
+    </entry>
+    <entry>
+        <key>registerSuccessfulRedirect</key>
+        <value>https://m.w88vn.com/</value>
+    </entry>
+    <entry>
+        <key>teddyConfig</key>
+        <value>{
+            "enabled": false,
+            "domain": "https://teddybear-uat.whiteproj.com/",
+            "path": "Pbuploadfptaixius"
+            }
+        </value>
+    </entry>
+</defaultsMap><!-- END xml_defaults -->

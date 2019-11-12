@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rpsbg" />
+
+    <include
+        android:id="@+id/gift"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/item_ranking"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".68" />
+
+    <include
+        android:id="@+id/item_ranking"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/gift"
+        app:layout_constraintLeft_toRightOf="@id/gift"
+        app:layout_constraintRight_toLeftOf="@+id/item_promotions" />
+
+    <include
+        android:id="@+id/item_promotions"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/item_ranking"
+        app:layout_constraintLeft_toRightOf="@id/item_ranking"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="gift,item_ranking,item_promotions" />
+
+    <include
+        android:id="@+id/item_playforfun"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/item_howtoplay"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintVertical_bias=".9" />
+
+    <include
+        android:id="@+id/item_howtoplay"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/item_playforfun"
+        app:layout_constraintRight_toLeftOf="@+id/item_facebook"
+        app:layout_constraintTop_toTopOf="@id/item_playforfun" />
+
+    <include
+        android:id="@+id/item_facebook"
+        layout="@layout/item_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/item_howtoplay"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_playforfun" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="item_facebook,item_howtoplay,item_playforfun" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/banner"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginBottom="4dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_barrier" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
