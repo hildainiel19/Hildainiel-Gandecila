@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "funplay.nativeapp.rps"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 3
+        versionName "0.3"
+
+        buildConfigField("String", "precacheBaseUrl", '"https://native-config.mnltechsecgate.com/"')
+        buildConfigField("String", "precacheUrlOverride", '"https://native-config.mnltechsecgate.com/nativeconfigs/5d78cbc8e8ac29080288b290"')
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "../../rps_native-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'gameplay.casinomobile.teddybear:teddybear:1.1.8'
+    implementation 'com.github.fondesa:kpermissions:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.koin:koin-android:2.0.1'
+    implementation 'org.jetbrains.anko:anko-commons:0.10.8'
+    implementation 'com.chibatching.kotpref:kotpref:2.8.0'
+    implementation 'com.chibatching.kotpref:initializer:2.8.0'
+    implementation 'com.google.firebase:firebase-config:19.0.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    kapt "android.arch.persistence.room:compiler:1.0.0"
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    implementation 'com.github.ghost1372:Mzip-Android:0.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    testImplementation 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

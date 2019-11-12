@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RPS</string>
+    <string name="ranking">RANKING</string>
+    <string name="promotions">PROMOTIONS</string>
+    <string name="play_for_fun">PLAY FOR FUN</string>
+    <string name="how_to_play">HOW TO PLAY</string>
+    <string name="fb">FACEBOOK</string>
+    <string name="open_to_get_gift">OPEN TO GET GIFT</string>
+    <string name="register_success">Account registration successful!\nStart best products and services experience.\nPlay Now! HOT promotions are waiting for you!</string>
+    <string name="back_to_main">GO BACK TO MAIN PAGE</string>
+    <string name="play_now">PLAY NOW</string>
+</resources>

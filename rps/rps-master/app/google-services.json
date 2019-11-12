@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974517539876",
+    "firebase_url": "https://funplay-rps.firebaseio.com",
+    "project_id": "funplay-rps",
+    "storage_bucket": "funplay-rps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974517539876:android:da0d6891187c2e898d74b1",
+        "android_client_info": {
+          "package_name": "funplay.nativeapp.rps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974517539876-pmm4mtjaq7k259fa97uglsqcjcg4p5jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqCDKR4k3atBWkr4iKS6JV1j9ScMvYy5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974517539876-pmm4mtjaq7k259fa97uglsqcjcg4p5jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
